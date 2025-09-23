@@ -1,3 +1,5 @@
+package zadania;
+
 import java.util.Scanner;
 
 public class WarunkiZadanie {

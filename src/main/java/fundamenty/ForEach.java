@@ -1,6 +1,9 @@
+package fundamenty;
+
 import java.util.Random;
 
-public class ForEach3 {
+public class ForEach {
+
     public static void main(String[] args) {
         Random random = new Random();
         double[] numbers = new double[100];
@@ -18,8 +21,8 @@ public class ForEach3 {
         }
         System.out.println("Znaleziono " + counter + " liczb poniżej 25%");
 
-        for (double number:smallnumbers) {
-            System.out.println(number);
+        for (int i = 0; i < smallnumbers.length; i++) {
+            System.out.println(smallnumbers[i]);
         }
 
         double[] smallNumbersCorrected = new double[counter];
@@ -31,4 +34,5 @@ public class ForEach3 {
             System.out.println(smallnumbers[i]);
         }
     }
+
 }

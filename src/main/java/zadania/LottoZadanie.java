@@ -34,6 +34,18 @@ public class LottoZadanie {
         }
         System.out.println(komunikat.substring(0,komunikat.length() -2));
 
+        int counter = 0;
+        for (int wyl : wylosowane){
+            for (int wpr : wprowadzone){
+                if(wyl == wpr){
+                    counter++;
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Trafienia: " + counter);
 
+        int[] nagrody = new int[] {0, 0, 0, 16, 200, 4000, 1500000};
+        System.out.println("Nagroda wynosi: " + nagrody[counter] + "zł");
     }
 }

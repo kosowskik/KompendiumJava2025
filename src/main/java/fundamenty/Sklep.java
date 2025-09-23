@@ -1,3 +1,5 @@
+package fundamenty;
+
 public class Sklep {
     public static void main(String[] args) {
 
